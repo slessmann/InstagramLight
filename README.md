@@ -1,6 +1,6 @@
 # README
 
-My first little instagramm project
+My first little instagram project
 
 Enjoy!
 
