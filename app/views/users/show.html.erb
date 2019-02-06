@@ -1,0 +1,29 @@
+
+<div>
+
+<center>
+
+	<% @posts.each do |post| %>
+		<% if post.post_type=="image" %>
+		<ul>
+			<img src = '<%= post.image_url %>'>
+		</ul>
+		<% else %>
+		<ul>
+			<%= post.image_url %>
+		
+		<% end %>
+		<% if current_user and current_user == @user %>
+			<%= link_to('Edit Post', edit_user_post_path(@user, post)) %>
+		<% end %>
+		</ul>
+	<% end %>
+
+</center>
+
+
+</div>
+
+
+
+

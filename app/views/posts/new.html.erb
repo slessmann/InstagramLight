@@ -1,0 +1,11 @@
+
+
+<%= form_for [@user, @post] do |f| %>
+
+  Post: <%= f.text_field :image_url %><br />
+
+  Post Type: <%= f.select :post_type, ['text', 'image'] %><br />
+
+  <%= f.submit %>
+
+<% end %>
